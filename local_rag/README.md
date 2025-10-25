@@ -19,11 +19,16 @@ ollama pull llama3:8b
 ollama pull mxbai-embed-large
 ```
 
+## Download the repository in your home folder
+```
+git clone https://github.com/swagat/ollama.git
+cd ~/ollama/local_rag
+```
+
 ## Run (local models)
 
 ```bash
 source ~/.virtualenvs/langchainenv/bin/activate
-cd /home/swagat/GIT/ollama/local_rag
 python rag_demo.py
 ```
 
@@ -31,7 +36,6 @@ python rag_demo.py
 
 ```bash
 source ~/.virtualenvs/langchainenv/bin/activate
-cd /home/swagat/GIT/ollama/local_rag
 export OLLAMA_API_KEY="your-cloud-token"
 python rag_demo_cloud.py
 ```
@@ -40,7 +44,6 @@ python rag_demo_cloud.py
 
 ```bash
 source ~/.virtualenvs/langchainenv/bin/activate
-cd /home/swagat/GIT/ollama/local_rag
 streamlit run app.py
 ```
 
