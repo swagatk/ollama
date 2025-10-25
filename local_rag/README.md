@@ -14,7 +14,7 @@ python -m venv ~/.virtualenvs/langchainenv
 source ~/.virtualenvs/langchainenv/bin/activate
 pip install --upgrade pip
 pip install langchain langchain-community langchain-core langchain-text-splitters \
-           langchain-ollama chromadb pypdf
+           langchain-ollama chromadb pypdf streamlit
 ollama pull llama3:8b
 ollama pull mxbai-embed-large
 ```
