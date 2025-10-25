@@ -13,7 +13,7 @@ embeddings = OllamaEmbeddings(model="mxbai-embed-large")
 
 print("Loading and splitting document...")
 # 2. Load and split document
-loader = PyPDFLoader("paper.pdf")
+loader = PyPDFLoader("/home/swagat/GIT/ollama/local_rag/paper.pdf")
 docs = loader.load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
 splits = text_splitter.split_documents(docs)

@@ -36,4 +36,14 @@ export OLLAMA_API_KEY="your-cloud-token"
 python rag_demo_cloud.py
 ```
 
+## Run (Streamlit web UI)
+
+```bash
+source ~/.virtualenvs/langchainenv/bin/activate
+cd /home/swagat/GIT/ollama/local_rag
+streamlit run app.py
+```
+
 Type questions at the prompt. Use `exit`, `quit`, or `Ctrl+C` to stop.
+
+Upload a PDF when prompted, then ask questions through the browser interface.
